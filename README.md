@@ -1,2 +1,3 @@
 # neon.vim
-Dark vim colorscheme,based on eclipse neon dark theme
+Dark vim colorscheme, 
+based on eclipse neon dark theme
