@@ -60,7 +60,7 @@ M.base = {
   MsgSeparator = { fg = c.fg, bg = c.bg },
   NonText = { fg = c.gray2 },
   Normal = { fg = c.fg, bg = config.transparent_background and c.none or c.bg },
-  NormalFloat = { bg = c.dark },
+  NormalFloat = { bg = c.gray1 },
   NormalNC = { fg = c.fg, bg = config.transparent_background and c.none or c.bg },
   Number = { fg = c.gray },
   Operator = { fg = c.purple },
@@ -226,6 +226,10 @@ M.plugins = {
   LspReferenceRead = { bg = c.bg, style = 'bold' },
   LspReferenceText = { bg = c.bg, style = 'bold' },
   LspReferenceWrite = { bg = c.bg, style = 'bold' },
+  -- GitSigns
+  GitSignsAdd = { fg = c.diff_add },
+  GitSignsChange = { fg = c.diff_change },
+  GitSignsDelete = { fg = c.diff_delete },
   -- Nvim-tree
   NvimTreeCursorLine = { bg = c.bg },
   NvimTreeExecFile = { fg = c.fg },
