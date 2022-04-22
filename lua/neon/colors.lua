@@ -8,7 +8,7 @@ return {
   dark = '#252525',
   dark1 = '#545c7e',
   dark2 = '#737aa2',
-  dark4= '#2D2D30',
+  dark4 = '#2D2D30',
   blue = '#7aa2f7',
   blue0 = '#3d59a1',
   blue1 = '#2ac3de',
@@ -20,7 +20,7 @@ return {
   blue4 = '#79ABFF',
   blue8 = '#66E1F8',
   blue9 = '#5e81ac',
-  brown= '#613214',
+  brown = '#613214',
   comment = '#565f89',
   cyan = '#7dcfff',
   cyan2 = '#17C6A3',
@@ -37,6 +37,7 @@ return {
   green2 = '#41a6b5',
   green3 = '#B5CEA8',
   green4 = '#55c43f',
+  green5 = '#1f2d23',
   gray = '#808080',
   gray1 = '#3e3e3e',
   gray2 = '#606060',
@@ -48,4 +49,4 @@ return {
   diff_change = '#0c7d9d',
   diff_delete = '#94151b',
   diff_text = '#265478',
- }
+}
