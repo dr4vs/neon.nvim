@@ -38,7 +38,7 @@ M.base = {
   ErrorMsg = { fg = c.red1, bg = c.bg, style = 'bold' },
   Exception = { fg = c.purple },
   Float = { fg = c.orange },
-  FloatBorder = { fg = c.gray, bg = c.dark },
+  FloatBorder = { fg = c.dark, bg = c.dark },
   FoldColumn = { fg = c.accent, bg = c.dark },
   Folded = { fg = c.accent, bg = c.dark },
   Function = { fg = c.blue3 },
@@ -60,14 +60,14 @@ M.base = {
   MsgSeparator = { fg = c.fg, bg = c.bg },
   NonText = { fg = c.gray2 },
   Normal = { fg = c.fg, bg = config.transparent_background and c.none or c.bg },
-  NormalFloat = { bg = c.gray1 },
+  NormalFloat = { bg = c.dark },
   NormalNC = { fg = c.fg, bg = config.transparent_background and c.none or c.bg },
   Number = { fg = c.gray },
   Operator = { fg = c.purple },
-  Pmenu = { fg = c.fg, bg = c.gray1 },
-  PmenuSbar = { bg = c.dark },
-  PmenuSel = { fg = c.yellow3, bg = c.cursor_fg },
-  PmenuThumb = { bg = c.gray },
+  Pmenu = { fg = c.fg, bg = c.dark },
+  PmenuSbar = { bg = c.dark5 },
+  PmenuSel = { fg = c.yellow3, bg = c.gray1 },
+  PmenuThumb = { bg = c.dark4 },
   PreCondit = { fg = c.purple },
   PreProc = { fg = c.purple },
   Question = { fg = c.orange },
@@ -142,6 +142,9 @@ M.base = {
 }
 
 M.plugins = {
+  -- Bufferline
+  BufferLineIndicatorSelected = { fg = c.yellow2, bg = c.bg },
+  BufferLineFill = { fg = c.fg, bg = c.dark },
   -- Cmp
   CmpDocumentation = { fg = c.fg, bg = c.none },
   CmpDocumentationBorder = { fg = c.gray, bg = c.none },
@@ -226,6 +229,8 @@ M.plugins = {
   LspReferenceRead = { bg = c.bg, style = 'bold' },
   LspReferenceText = { bg = c.bg, style = 'bold' },
   LspReferenceWrite = { bg = c.bg, style = 'bold' },
+  LspFloatWinNormal = { fg = c.fg, bg = c.dark },
+  LspFloatWinBorder = { fg = c.dark },
   -- Dap
   DapBreakpoint = { fg = c.red1, style = "bold" },
   DapBreakpointCondition = { fg = c.orange2, style = "bold" },
@@ -260,8 +265,19 @@ M.plugins = {
   -- Telescope
   TelescopeBorder = { fg = c.gray, bg = config.transparent_background and c.none or c.bg },
   TelescopeMatching = { fg = c.red1, style = 'bold' },
-  TelescopePromptPrefix = { fg = c.gray },
+  TelescopePromptPrefix = { fg = c.gray, bg = c.dark },
   TelescopeSelection = { fg = c.yellow3, style = 'bold' },
+  TelescopePromptNormal = { bg = c.dark },
+  TelescopeResultsNormal = { bg = c.dark5 },
+  TelescopePreviewNormal = { bg = c.dark6 },
+
+  TelescopePromptBorder = { bg = c.dark, fg = c.dark },
+  TelescopeResultsBorder = { bg = c.dark5, fg = c.dark5 },
+  TelescopePreviewBorder = { bg = c.dark6, fg = c.dark6 },
+
+  TelescopePromptTitle = { fg = c.dark },
+  TelescopeResultsTitle = { fg = c.dark5 },
+  TelescopePreviewTitle = { fg = c.dark6 },
   -- Treesitter
   TSAnnotation = { fg = c.red2 },
   TSAttribute = { fg = c.red2 },
@@ -317,12 +333,12 @@ M.plugins = {
   TSVariable = { fg = c.yellow3 },
   TSVariableBuiltin = { fg = c.red1 },
   --  WhichKey
-  WhichKey = { fg = c.red },
+  WhichKey = { fg = c.red, style = 'bold' },
   WhichKeyGroup = { fg = c.yellow2 },
-  WhichKeyDesc = { fg = c.fg },
+  WhichKeyDesc = { fg = c.fg, style = 'italic' },
   WhichKeySeperator = { fg = c.fg },
   WhichKeySeparator = { fg = c.fg },
-  WhichKeyFloat = { fg = c.fg },
+  WhichKeyFloat = { fg = c.fg, bg = c.dark },
   WhichKeyValue = { fg = c.fg },
 }
 

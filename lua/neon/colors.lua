@@ -9,6 +9,8 @@ return {
   dark1 = '#545c7e',
   dark2 = '#737aa2',
   dark4 = '#2D2D30',
+  dark5 = "#202020",
+  dark6 = "#1e1e1e",
   blue = '#7aa2f7',
   blue0 = '#3d59a1',
   blue1 = '#2ac3de',
