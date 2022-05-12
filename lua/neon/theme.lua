@@ -231,6 +231,9 @@ M.plugins = {
   LspReferenceWrite = { bg = c.bg, style = 'bold' },
   LspFloatWinNormal = { fg = c.fg, bg = c.dark },
   LspFloatWinBorder = { fg = c.dark },
+  LspCodeLens = { fg = c.gray1 },
+  LspCodeLensText = { fg = c.gray1 },
+  LspCodeLensTextSign = { fg = c.gray1 },
   -- Dap
   DapBreakpoint = { fg = c.red1, style = "bold" },
   DapBreakpointCondition = { fg = c.orange2, style = "bold" },
