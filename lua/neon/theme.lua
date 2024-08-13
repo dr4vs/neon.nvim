@@ -300,6 +300,8 @@ M.plugins = {
   ["@field"] = { fg = c.yellow1 },
   ["@float"] = { fg = c.green3 },
   ["@function.builtin.java"] = { fg = c.red1 },
+  ["@function.method"] = { fg = c.green4 },
+  ["@function.method.call"] = { fg = c.green4 },
   ["@function.builtin"] = { fg = c.yellow2 },
   ["@function.macro"] = { fg = c.yellow2 },
   ["@function"] = { fg = c.yellow2 },
@@ -317,7 +319,7 @@ M.plugins = {
   ["@operator"] = { fg = c.fg },
   ["@parameter"] = { fg = c.blue4 },
   ["@parameter.reference"] = { fg = c.blue8 },
-  ["@property"] = { fg = c.blue8 }, -- Same as `["@field"]`.
+  ["@property"] = { fg = c.yellow1 }, -- Same as `["@field"]`.
   ["@punctuation.delimiter"] = { fg = c.fg },
   ["@punctuation.bracket"] = { fg = c.fg },
   ["@punctuation.special"] = { fg = c.fg },
@@ -399,7 +401,7 @@ M.plugins = {
   ["@lsp.type.variable"] = { fg = c.yellow3 },
   ["@lsp.type.variable.builtin"] = { fg = c.red1 },
   --lua
-  ["@lsp.typemod.function.defaultLibrary.lua"] = { fg = c.purple },
+  ["@lsp.typemod.function.defaultLibrary.lua"] = { fg = c.yellow2 },
   ["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = c.red1 },
   --java
   ["@lsp.mod.abstract.java"] = { fg = c.blue10 },
