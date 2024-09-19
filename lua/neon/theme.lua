@@ -265,6 +265,15 @@ M.plugins = {
   NvimTreeSpecialFile = { fg = c.orange },
   NvimTreeSymlink = { fg = c.gray3 },
   NvimTreeVertSplit = { fg = c.gray1 },
+  -- Statusline
+  Statusline= { bg = c.gray1, fg = c.fg },
+  StatuslineNC = { fg = c.fg, bg = config.transparent_background and c.none or c.bg },
+  StatuslineAccent = { bg = c.fg, fg = c.bg, style = 'bold' },
+  StatuslineInsertAccent = { bg = c.yellow2, fg = c.bg, style = 'bold' },
+  StatuslineVisualAccent = { bg = c.blue3, fg = c.fg, style = 'bold' },
+  StatuslineReplaceAccent = { bg = c.red1, fg = c.bg, style = 'bold' },
+  StatuslineCmdLineAccent = { bg = c.dark3, fg = c.fg, style = 'bold' },
+  StatuslineTerminalAccent = { bg = c.gray, fg = c.fg, style = 'bold' },
   -- Telescope
   TelescopeBorder = { fg = c.gray, bg = config.transparent_background and c.none or c.bg },
   TelescopeMatching = { fg = c.red1, style = 'bold' },
